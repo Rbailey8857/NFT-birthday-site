@@ -1,6 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import { MintForm } from "./MintForm.js";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 
 function App() {
   return (
@@ -49,6 +50,19 @@ function App() {
           <span class="text-6xl mx-4">🎂</span>
         </div>
       </div>
+      <div className='container mx-auto p-4 mt-4 flex flex-row-reverse'>
+        <ConnectButton 
+          showBalance={false} 
+          chainStatus={{
+            smallScreen: 'none',
+            largeScreen: 'icon'
+         }} 
+          label="Join the Party!" 
+          accountStatus={{
+            smallScreen: 'avatar',
+            largeScreen: 'full'
+         }}/>
+        </div>
       <div className="container mx-auto p-4 mt-4">
         <div className="text-center mb-4">
           <h1 className="text-5xl font-bold text-gray-800">UNKNOWN's 21st Birthday</h1>
@@ -60,10 +74,10 @@ function App() {
           <p className="text-lg font-semibold mb-4">Here is where you can give a gift if you would like :pepelove:</p>
           
           <div className="flex justify-between mb-4">
-            <input placeholder="Ethereum Gift" type="text" id="eth-donation" className="w-1/8 rounded-full px-4 py-2 bg-gray-900 text-white" />
+            <input placeholder="Gift Native Token" type="text" id="eth-donation" className="w-1/8 rounded-full px-4 py-2 bg-gray-900 text-white" />
           </div>
           <div className="flex justify-between mb-4">
-            <input placeholder="NFT Gift" type="text" id="nft-donation" className="w-1/8 rounded-full px-4 py-2 bg-gray-900 text-white" />
+            <input placeholder="Gift NFT" type="text" id="nft-donation" className="w-1/8 rounded-full px-4 py-2 bg-gray-900 text-white" />
           </div>
           <button className="bg-gray-600 px-4 py-2 rounded-full shadow-lg text-xl font-bold">Send</button>
         </div>
