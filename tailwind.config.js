@@ -23,6 +23,9 @@ module.exports = {
         },
       },
     },
+    fontFamily: {
+      messy: ["messy"]
+    }
   },
   variants: {},
   plugins: [],

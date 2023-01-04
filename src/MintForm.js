@@ -32,18 +32,16 @@ const contract = new ethers.Contract(contractAddress, abi, signer);
 export function MintForm() {
   // State variables to store the token ID and mint price
   const [tokenId, setTokenId] = useState("");
-  const [mintPrice, setMintPrice] = useState("");
 
   // Function to handle the mint form submission
   async function handleSubmit(event) {
     event.preventDefault();
 
     // Call the mint function of the NFT contract
-    await contract.mint(tokenId, { value: ethers.utils.parseEther(mintPrice) });
+    await contract.mint(tokenId);
 
     // Reset the form fields
     setTokenId("");
-    setMintPrice("");
   }
 
   return (
@@ -55,15 +53,6 @@ export function MintForm() {
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           value={tokenId}
           onChange={(event) => setTokenId(event.target.value)}
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block text-gray-700 text-sm font-bold mb-2">Mint Price (ETH):</label>
-        <input
-          placeholder="itz free mf XD"
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          value={mintPrice}
-          onChange={(event) => setMintPrice(event.target.value)}
         />
       </div>
       <div className="mb-6 text-center">
