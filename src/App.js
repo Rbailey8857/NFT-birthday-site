@@ -93,7 +93,9 @@ function App() {
           <span class="text-6xl mx-4">🎂</span>
         </div>
       </div>
-      <div className='container mx-auto p-4 mt-4 flex flex-row-reverse'>
+      <div className='container mx-auto p-4 mt-4 grid grid-cols-2'>
+        <h1 className="text-5xl font-bold">SUPPLY:456</h1>
+        <div className="flex flex-row-reverse">
         <ConnectButton 
           showBalance={false} 
           chainStatus={{
@@ -105,7 +107,10 @@ function App() {
             smallScreen: 'avatar',
             largeScreen: 'full'
          }}/>
+         </div>
+         <div><h1 className="font-bold text-2xl mt-2">All for the FREE</h1></div>
         </div>
+        
       <div className="container mx-auto p-4 mt-4">
         <div className="text-center mb-4">
           <h1 className="text-5xl font-bold text-gray-800">UNKNOWN's 21st Birthday</h1>
@@ -128,86 +133,86 @@ function App() {
         </div>
       </div>
       <div class="grid grid-cols-10 gap-5">
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
-        <img width="256px" height="256px" src={wow}/>
-        <img width="256px" height="256px" src={topg}/>
-        <img width="256px" height="256px" src={degen}/>
-        <img width="256px" height="256px" src={free}/>
-        <img width="256px" height="256px" src={king}/>
-        <img width="256px" height="256px" src={whale}/>
-        <img width="256px" height="256px" src={gm}/>
-        <img width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={bj}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={wow}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={topg}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={degen}/>
+        <img class="hover:animate-bounce" width="256px" height="256px" src={free}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={king}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={whale}/>
+        <img class="hover:animate-spin" width="256px" height="256px" src={gm}/>
+        <img class="hover:animate-ping" width="256px" height="256px" src={bj}/>
         
         
         
