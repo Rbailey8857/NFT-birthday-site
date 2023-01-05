@@ -7,9 +7,6 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    backgroundImage: {
-      'gib': "url('./images/gib.png')",
-    },
     extend: {
       animation: {
         marquee: 'marquee 5s linear infinite',
