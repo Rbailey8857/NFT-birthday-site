@@ -47,9 +47,9 @@ export function MintForm() {
   return (
     <form onSubmit={handleSubmit} className="mx-auto w-full max-w-sm">
       <div className="mb-4">
-        <label className="block text-gray-700 text-sm font-bold mb-2">Token ID:</label>
+        
         <input
-          placeholder="Chose a tokenID"
+          placeholder="MAX 2 PER WALLET"
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           value={tokenId}
           onChange={(event) => setTokenId(event.target.value)}
@@ -57,7 +57,7 @@ export function MintForm() {
       </div>
       <div className="mb-6 text-center">
         <button
-          className="bg-gray-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-gray-800 hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="submit"
         >
            CLICK TO MINT
